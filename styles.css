@@ -47,15 +47,22 @@ body{
     display: none;
 }
 
-.banner .icones img:hover{
+.banner .icones button:hover{
     background-color: rgb(83, 198, 94);
 }
+.icones{
+    width: 100%;
+}
 
-.banner .icones img{
-    width: 30px;
-    padding: 10px;
+.banner .icones button{
+    border-style: none;
+    width: 15%;
+    padding: 10px;  
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
+    border-radius: 50%;
+}
+.banner .icones button img{
+    width: 30px;
 }
 
 @media(min-width: 768px){
@@ -80,4 +87,82 @@ body{
         width: 350px;
         display: block;
     }
+}
+
+.meio{
+    margin-top: auto;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.meio img{
+    width: 45px;
+    padding: 20px;
+    background-color: rgb(83, 198, 94);
+    border-radius: 50%;
+    align-items: center;
+}
+
+.meio div{
+    display: flex;
+    padding: 35px;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.meio h2{
+    font-size: 17px;
+}
+.meio p{
+    color: gray;
+    font-size: 12px;
+    
+}
+.busca{
+    background-color:#f1ecec;
+}
+.busca {
+    margin-top: auto;
+    padding: 0 100px;
+    display: flex;
+
+}
+.busca div{
+    margin-top: 40px;
+    padding: 0;
+    width: 50%;
+}
+
+.busca p{
+    color: gray;
+}
+
+input{
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 250px;
+    border-radius: 15px 0 0 15px;
+    font-size: 15px;
+    color: gray;    
+}
+
+button{
+    margin: 0;
+    border: 0;
+    height: 40px;
+    width: 100px;
+    border-radius: 0 15px 15px 0;
+    margin-left: -15px;
+    background-color: rgb(83, 198, 94);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+iframe{
+    border-radius: 15px;
 }
